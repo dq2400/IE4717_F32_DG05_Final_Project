@@ -1,0 +1,191 @@
+header{ 
+	background-color: #000000;
+    color			: #5AA9E9; 
+    font-size		: 150%; 
+    padding			: 10px 10px 10px 10px; }
+body {
+	color			: #FFFFFF;
+	background-color: #000000;
+	font-family		: Verdana, Arial, sans-serif;}
+h2 { 
+	color			: #5AA9E9; 
+	margin			: 0px; }
+h3 { 
+	color			: #5AA9E9; }
+footer {
+	background-color: #000000;
+	font-size		: 70%;
+    text-align		: center;
+	clear			: right;
+    padding-bottom	: 20px; 
+	color			: #FFFFFF; }
+footer a{
+	color			: #FFFFFF; }
+.center {
+	display			: block;
+	margin-left		: 20px;
+	width			: 20%; 
+	height			: 100%; 
+	display			: flex; }
+.container {
+	position		: relative;
+	text-align		: center;
+	color			: #FFFFFF; }
+.text_centered {
+	position		: absolute;
+	top				: 50%;
+	left			: 50%;
+	transform		: translate(-50%, -50%); }
+.column {
+	flex			: 33.33%;
+	padding			: 5px; }
+.partnership_container {
+    position		: relative;
+    width			: 300px;
+    height			: 300px;
+    display			: inline-block; 
+	padding			: 5px; }
+.partnership_image {
+    display			: block;
+    width			: 300px;
+    height			: 300px; }
+.partnership_text {
+    color			: #000000;
+    font-size		: 20px;
+    position		: absolute;
+    top				: 50%;
+    left			: 50%;
+    transform		: translate(-50%, -50%);
+    font-family		: sans-serif; }
+.partnership_overlayFade{
+    height			: 100%;
+    width			: 100%;
+    top				: 0;
+    left			: 0;
+    background-color: #5AA9E9; }
+.partnership_overlay {
+    position		: absolute;
+    opacity			: 0;
+    transition		: all .3s ease;
+    background-color: #FFFFFF; }
+.partnership_container:hover .partnership_overlay,.partnership_container:hover .partnership_overlayFade {
+    opacity			: 0.8; }
+#wrapper {  
+    background-color: #000000;
+	width			: 80%;
+	margin			: auto;
+    min-width		: 1000px; }
+#toptextcontent {
+	color			: #FFFFFF; 
+	margin			: auto; 
+	min-width		: 700px; 
+	width			: 20%; 
+	text-align		: justify; }
+#navrow { 
+	background-color: #000000;
+	height			: auto; 
+	font-family		: Verdana, Arial, sans-serif; 
+	border-top		: 2px solid #FFFFFF;
+	border-bottom	: 2px solid #FFFFFF;
+	margin			: 0px 0px 15px 0px;}
+#navrow ul { 
+	list-style-type : none;
+	text-align 		: center;
+	padding			: 0px 20px; 
+	margin-left		: auto;
+	margin-right	: auto;
+	font-size		: 1em; 
+	font-weight		: bold; }
+#navrow li {
+	display			: inline;
+	margin			: 0px 35px;}
+#navrow a{ 
+	text-decoration	: none; 
+	color			: #FFFFFF; }
+#content {
+	color			: #FFFFFF; 
+	margin			: auto; 
+	min-width		: 1000px; 
+	width			: 20%; }
+#rowcontent {
+	margin			: 10px;
+	width			: 95%;
+	height			: 320px; }	
+#floatleft {
+	margin			: 10px;
+	width			: 400px;
+	height			: 300px; 
+	float			: left; }
+#floatright {
+	margin			: 10px;
+	width			: 580px;
+	height			: 300px; 
+	float			: right; }
+#rowimg {
+	margin			: auto;
+	padding			: 10px 10px 0px 10px;
+	width			: 95%;
+	height			: 300px; 
+	text-align 		: center; }
+#left {
+	margin			: 10px;
+	width			: 450px;
+	float			: left; 
+	text-align		: justify; }
+#right {
+	margin			: 10px;
+	width			: 450px;
+	float			: right; 
+	text-align		: justify; }
+#login {
+	padding			: 5px;
+	background-color: #000000;
+	opacity			: 0.8;
+	color			: #5AA9E9; 
+	font-size		: 1.2em; 
+	font-weight		: bold; }
+#Enquire table {
+	margin			: auto;
+	padding 		: 0px;
+	border-spacing	: 15px; 
+	}
+#Enquire tr {
+	padding			: 10px 5px;
+	vertical-align	: top;
+	font-weight		: normal; }
+#left2 {
+	margin			: 10px;
+	width			: 325px;
+	float			: left; 
+	text-align		: justify; 
+	height			: auto; }
+#right2 {
+	margin			: 10px;
+	width			: 575px;
+	float			: right; 
+	text-align		: justify; 
+	height			: auto; }
+#button {
+	width			: auto;
+	height			: auto; 
+	text-align		: center;
+	background-color: #5AA9E9;
+	color			: #000000;
+	text-decoration	: none; }
+#enquirycounttable {
+	margin			: auto;
+	width			: 30%;
+	padding			: 10px;
+	text-align		: center; }
+#newrun {
+	margin			: auto;
+	width			: 60%;
+	padding			: 10px;
+	text-align		: center;}
+#newrunform {
+	margin			: auto;
+	width			: 60%;
+	padding			: 10px;
+	text-align		: center;}
+#newrunform td{
+	text-align		: left;}

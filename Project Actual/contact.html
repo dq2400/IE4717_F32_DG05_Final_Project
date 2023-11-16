@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Xperience</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="CSS_style.css">
+	<script type='text/javascript'>		
+		function checkName(event) {
+			var myName = event.currentTarget;
+			var pos = myName.value.search(/^[a-zA-Z\s]{3,20}$/);
+				if (pos < 0){
+					document.getElementById("nameresult").innerHTML = "Invalid Name";
+					myName.focus();
+					myName.select();
+					return false;
+				} else {
+					document.getElementById("nameresult").innerHTML = " ";
+					myName.focus();
+					myName.select();
+					return false;
+				}
+		}
+		function chkEnquiry(event) {
+			var myEnquiry = event.currentTarget;
+			var pos = myEnquiry.value.search(/^.{1,500}$/);
+				if (pos < 0){
+					document.getElementById("nameresult").innerHTML = "Invalid Enquiry";
+					myEnquiry.focus();
+					myEnquiry.select();
+					return false;
+				} else {
+					document.getElementById("nameresult").innerHTML = " ";
+					myEnquiry.focus();
+					myEnquiry.select();
+					return false;
+				}
+		}
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="center">
+				<div class="column"><a href="index.html"><img src="Logo.png" alt="Xperience"></a></div>
+				<div class="column"><img src="triangle.png" alt="Triangle"></div>
+				<div class="column"><img src="triangleblue.png" alt="Triangle"></div>
+				<div class="column"><img src="triangle.png" alt="Triangle"></div>
+				<div class="column"><img src="triangleblue.png" alt="Triangle"></div>
+				<div class="column"><img src="triangle.png" alt="Triangle"></div>
+			</div>
+		</header>
+		<div id="navrow">
+			<nav>
+				<ul>
+					<li><a href="index.html">About Us</a></li>
+					<li><a href="projects.html">Project Highlights</a></li>
+					<li><a href="partnership.html">Past Partnership</a></li>
+					<li><a href="book.html">Book Now!</a></li>
+					<li><a href="contact.html" style="color:#5AA9E9">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="content">
+			<div id="rowcontent">
+				<div id="left">
+					<div class="container">
+						<img src="Xperience_Play_1.jpg" alt="Xperience Picture" width= 450px>
+					</div>
+					<div id="Enquire">
+						<h3> Enquire Here! </h3>
+						<form action="enquiryform.php" method="post">
+							<table border="0">
+								<tr>
+									<p class="errortext" id="nameresult" style="color: red;"></p>
+								</tr>
+								<tr>
+									<td>Name: </td>
+									<td>
+										<input type="text" name="Name" id="Name" required placeholder = "Enter your name here" >
+									</td>
+								</tr>
+								<tr>
+									<td>Email: </td>
+									<td>
+										<input type="email" name="EmailID" id="EmailID" required placeholder = "Enter your Email here">
+									</td>
+								</tr>
+								<tr>
+									<td>Enquiry Type: </td>
+									<td>
+										<select name="EnquiryType" required id="EnquiryType">
+											<option value = "none" selected disabled hidden>Select an Option</option>
+											<option value = "Booking">NTU student booking</option>
+											<option value = "Project">Project opportunities</option>
+											<option value = "Partnership">Partnership opportunities</option>
+											<option value = "Others">Others</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>Enquiry: </td>
+									<td>
+										<textarea type="text" name="Enquiry" id="Enquiry" rows="4" cols="30" required  placeholder = "Enter your enquiry here"></textarea></br>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" style= "text-align:right">
+										<input type="submit" value="Submit Enquiry" id="submitbutton">
+									</td>
+								</tr>
+							</table>
+							<script type = "text/javascript">
+								var Name = document.getElementById("Name");
+								Name.addEventListener("change", checkName, false);
+								var Enquiry = document.getElementById("Enquiry");
+								Enquiry.addEventListener("change", chkEnquiry, false);
+							</script>
+						</form>
+					</div>
+				</div>
+				<div id="right">
+					<h3> Find Us! </h3>
+					<p>
+						Nanyang Technological University </br>
+						School of Electrical an​​d Electronic Engineeri​ng </br>
+						Block S2.2, 50 Nanyan​g Avenue, </br>
+						Singapore 639​798 </br>
+						</br>
+						S2.2-B3-09 </br>
+					</p>
+					<div class="container">
+						<img src="Xperience_Location.png" alt="Xperience Location" width= 450px>
+					</div>
+					</br>
+					<!--<a href="https://facebook.com">--><img src="facebook.png" alt="Facebook" height= 40px><!--</a>-->
+					<!--<a href="https://instagram.com">--><img src="instagram.png" alt="Instagram" height= 40px><!--</a>-->
+					<!--<a href="https://tiktok.com">--><img src="tiktok.png" alt="Tiktok" height= 40px><!--</a>-->
+					<!--<a href="mailto:eeelead@ntu.edu.sg"><img src="email.png" alt="Email" height= 40px></a>-->
+				</div>
+			</div>
+		</div>
+		<footer>
+			<small><i>Copyright &copy; 2023<br>
+			<a href="contact.html">Xperience@EEE</a></i></small>
+		</footer>
+	</div>
+</body>
+</html>
